@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSSEIN AMADU PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <!-- Background Video -->
+        <video autoplay muted loop id="bg-video">
+            <source src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\resources\3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1>HUSSEIN AMADU</h1>
+            <p>SOFTWARE TEST ENGINEER</p>
+            <button class="menu-toggle" onclick="openMenu()">☰</button>
+        </div>
+    </header>
+    
+    
+
+    <!-- Modal Menu -->
+    <div id="menu-modal" class="menu-modal">
+        <div class="menu-modal-content">
+            <span class="close-btn" onclick="closeMenu()">&times;</span>
+            <nav>
+                <a href="#about" onclick="closeMenu()">About Me</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#experience" onclick="closeMenu()">Experience</a>
+                <a href="#education" onclick="closeMenu()">Education</a>
+                <a href="#testimonials" onclick="closeMenu()">testimonials</a>
+                <a href="#download-cv" onclick="closeMenu()">My CV</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" data-aos="fade-up" data-aos-duration="1500">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\resources\Hussein Amadu (1).jpg" alt="Your Picture" class="profile-image">
+                <p>Throughout my career as a software tester, I have demonstrated an unwavering commitment to ensuring the quality and reliability of software products. My journey began with a deep dive into foundational testing methodologies and techniques, and I have continuously evolved alongside the rapidly changing software development landscape. With extensive experience in manual and automated testing, I am proficient in various testing frameworks and tools, enabling me to streamline processes and enhance efficiency. I excel in designing meticulous testing strategies and executing comprehensive quality assurance processes, with experience spanning web applications, mobile apps, and enterprise software solutions.</p>
+            </div>
+        </section>
+        
+
+        <section id="skills" data-aos="fade-left" data-aos-duration="1200">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>Java</p>
+                            <p>JavaScript</p>
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Testing Frameworks & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>Selenium</p>
+                            <p>Selenide</p>
+                            <p>Cypress</p>
+                            <p>Cucumber</p>
+                            <p>Appium</p>
+                        </div>
+                        <div class="skill-column">
+                            <p>Postman</p>
+                            <p>Rest Assured</p>
+                            <p>Karate</p>
+                            <p>Wire Mock</p>
+                        </div>
+                        <div class="skill-column">
+                            <p>Gatling</p>
+                            <p>JMeter</p>
+                            <p>Grafana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Containerization & Orchestration</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>Docker</p>
+                            <p>Kubernetes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Version Control & CI/CD Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>GIT</p>
+                            <p>GitHub</p>
+                            <p>GitLab</p>
+                            <p>Jenkins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            
+
+        <section id="projects" data-aos="fade-right" data-aos-duration="1200">
+            <h2>Projects</h2>
+            <div class="project" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\resources\captiVR.png" alt="Project Image" class="project-thumbnail">
+                <h3>captiVR</h3>
+                <p>CaptiVr is a web and mobile application that provides high quality 360-degree videos solutions.</p>
+                <a href="https://app.captivr.net/" target="_blank">View the Application</a>
+            </div>
+            <!-- <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out">
+                <img src="https://picsum.photos/1600/900" alt="Project Image" class="project-thumbnail">
+                <h3>Project Title 2</h3>
+                <p>Description of the project. Include the problem you solved, the technologies used, and any notable achievements.</p>
+                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
+            </div> -->
+        </section>
+
+        <section id="experience" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Work Experience</h2>
+            <div class="job" data-aos="fade-right" data-aos-duration="1000">
+                <h4>Software Test Engineer - AmaliTech gGmbH, Ghana, West-Africa  2023- Present</h4>
+                <p>- Demonstrated strong leadership in testing, mentoring junior testers,
+                    leading test strategy meetings, coordinating testing efforts across
+                    multiple teams, and implementing best practices in test automation
+                    and quality assurance; improved team productivity by 25% and
+                    enhanced overall testing quality and efficiency</p>
+                <p>- Developed a comprehensive test plan and detailed test cases,
+                    performing thorough manual testing for functionality, reliability, and
+                    usability. Resolved 95% of critical issues pre-release. Conducted API
+                    tests using Postman, Rest Assured, Karate DSL, and Wire Mock,
+                    ensuring 99.9% API reliability.</p>
+                <p>- Developed and maintained automated testing frameworks with
+                    Selenium, Selenide, Cucumber, and Cypress, cutting regression
+                    testing time by 40% and boosting release efficiency by 25%.
+                    Performed mobile app testing with Appium, reducing crash rates by
+                    30%. Conducted performance and load testing with Gatling and
+                    JMeter, improving performance by 35% and speeding up applications
+                    by 20% through detailed reporting</p>
+            </div>
+            <div class="job" data-aos="fade-left" data-aos-duration="1000">
+                <h4>Intern - AmaliTech gGmbH, Ghana, West-Africa 2022-2023</h4>
+                <p>Develop detailed test cases and conduct manual testing which
+                    improved productivity by 15%.</p>
+            </div>
+        </section>
+
+        <section id="education" data-aos="fade-down" data-aos-duration="1500">
+            <h2>Education</h2>
+            <p>Takoradi Technical University, Ghana, West-Africa</p>
+            <p>Specialization: Bachelor of Technology In Information Communication Technology - Software Engineering</p>
+        </section>
+      
+        <section id="testimonials" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-image-container">
+                        <img src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\resources\richard.jpeg" alt="Jane Doe" class="testimonial-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Your work ethic and skills were top-notch. A true professional in every sense."</p>
+                        <h4>Richard Appiah</h4>
+                        <p>Senior Developer at AmaliTech gGmbH</p>
+                        <a href="https://www.linkedin.com/in/richard-ap/" target="_blank">View profile</a>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image-container">
+                        <img src="https://picsum.photos/1600/900" alt="John Smith" class="testimonial-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"A pleasure to work with. Delivered exceptional results and always went above and beyond."</p>
+                        <h4>John Smith</h4>
+                        <p>Project Manager at Company ABC</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image-container">
+                        <img src="https://picsum.photos/1600/900" alt="Emily Johnson" class="testimonial-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Consistently demonstrated expertise and dedication. Highly recommended for any tech project."</p>
+                        <h4>Emily Johnson</h4>
+                        <p>Lead Designer at Creative Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+<section id="download-cv" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Download My CV</h2>
+            <p>If you're interested in learning more about my professional background, feel free to download my CV.</p>
+            <a href="https://drive.google.com/file/d/1vb0ay2FSjX0fU93g2cKWNomyEqKO6INk/view?usp=sharing" download="Hussein_Amadu_CV" class="download-btn">Download CV</a>
+        </section>
+
+<section id="contact" data-aos="zoom-in" data-aos-duration="1500">
+    <h2>Contact</h2>
+    <p>Email: <a href="https://husseinamadu634@gmail.com">husseinamadu634@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hussein-amadu-703426258" target="_blank">Your LinkedIn</a></p>
+    <p>Address: Accra, Ghana, West-Africa</p> <!-- Add your address if desired -->
+</section>
+
+    </main>
+
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <p>© 2024 husseiamadu. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

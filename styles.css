@@ -1,0 +1,386 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding and borders are included in element width */
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text visibility */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.menu-modal-content {
+    position: relative;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu-modal nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.menu-modal nav a:hover {
+    background-color: #f4f4f4;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-thumbnail {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-column {
+    flex: 1;
+    max-width: 45%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.skill-column p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.testimonial-image-container {
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff; /* Optional: Add a border around the image */
+}
+
+.testimonial-content {
+    font-style: italic;
+}
+
+.testimonial-content h4 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.testimonial-content p {
+    margin: 0;
+    color: #555;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Keep aspect ratio with width */
+    object-fit: cover;
+    border: 3px solid #333; /* Optional: adds a border around the image */
+}
+
+section#about p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+label, input, textarea {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        background-color: #fafafa;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        display: block;
+    }
+
+    .skill-card {
+        margin-bottom: 20px;
+        width: 100%; /* Ensure cards fit within the viewport */
+    }
+
+    .project-thumbnail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .testimonials-container {
+        display: block;
+    }
+
+    .testimonial-card {
+        margin-bottom: 20px;
+        width: 100%; /* Ensure cards fit within the viewport */
+    }
+
+    #contact {
+        padding: 20px 10px;
+    }
+
+    .download-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .menu-modal-content {
+        width: 90%; /* Use more width on mobile */
+        max-width: none; /* Remove max-width constraint */
+        margin: 50px auto; /* Reduce margin on mobile */
+    }
+}
