@@ -132,10 +132,13 @@ h2 {
 
 .project-thumbnail {
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+#companySite{
+    color: #000;
 }
 
 ul {

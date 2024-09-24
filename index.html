@@ -9,11 +9,12 @@
 </head>
 <body>
     <header>
-        <!-- Background Video -->
-        <video autoplay muted loop id="bg-video">
-            <source src="https://husseinvid.s3.us-west-2.amazonaws.com/3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+     <!-- Background Video -->
+<!-- Background Video -->
+<iframe id="bg-video" src="https://www.youtube.com/embed/my87Bq9JFkE?autoplay=1&mute=1&loop=1&playlist=my87Bq9JFkE" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
         <div class="header-content">
             <h1>HUSSEIN AMADU</h1>
             <p>SOFTWARE TEST ENGINEER</p>
@@ -44,7 +45,8 @@
         <section id="about" data-aos="fade-up" data-aos-duration="1500">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="https://husseinvid.s3.us-west-2.amazonaws.com/Hussein+Amadu+(1).jpg" alt="Your Picture" class="profile-image">
+                <img src="https://i.imgur.com/c5YiD0m.jpg" alt="Your Picture" class="profile-image">
+
                 <p>Throughout my career as a software tester, I have demonstrated an unwavering commitment to ensuring the quality and reliability of software products. My journey began with a deep dive into foundational testing methodologies and techniques, and I have continuously evolved alongside the rapidly changing software development landscape. With extensive experience in manual and automated testing, I am proficient in various testing frameworks and tools, enabling me to streamline processes and enhance efficiency. I excel in designing meticulous testing strategies and executing comprehensive quality assurance processes, with experience spanning web applications, mobile apps, and enterprise software solutions.</p>
             </div>
         </section>
@@ -75,9 +77,9 @@
                         </div>
                         <div class="skill-column">
                             <p>Postman</p>
-                            <p>Rest Assured</p>
+                            <p>Rest-Assured</p>
                             <p>Karate</p>
-                            <p>Wire Mock</p>
+                            <p>WireMock</p>
                         </div>
                         <div class="skill-column">
                             <p>Gatling</p>
@@ -92,6 +94,7 @@
                         <div class="skill-column">
                             <p>Docker</p>
                             <p>Kubernetes</p>
+                            <p>Jenkins</p>
                         </div>
                     </div>
                 </div>
@@ -102,10 +105,36 @@
                             <p>GIT</p>
                             <p>GitHub</p>
                             <p>GitLab</p>
-                            <p>Jenkins</p>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>MySQL</p>
+                            <p>Oracle-Database</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="skill-card">
+                    <h3>Cloud Services</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>Amazon Web Services (AWS)</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="skill-card">
+                    <h3>Project Management & Collaboration</h3>
+                    <div class="skill-list">
+                        <div class="skill-column">
+                            <p>Jira</p>
+                            <p>Confluence</p>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </section>
         
@@ -114,52 +143,58 @@
         <section id="projects" data-aos="fade-right" data-aos-duration="1200">
             <h2>Projects</h2>
             <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\util\captiVR.png" alt="Project Image" class="project-thumbnail">
-                <h3>captiVR</h3>
+              
+                <h3>captiVR</h3>  
+                <img src="https://i.imgur.com/U9QyLhE.png" alt="Project Image" class="project-thumbnail">
                 <p>CaptiVr is a web and mobile application that provides high quality 360-degree videos solutions.</p>
-                <a href="https://app.captivr.net/" target="_blank">View the Application</a>
+                <p>• Developed and executed a comprehensive test plan and detailed test cases based on Software 
+                    Requirements Specification (SRS), performing thorough manual testing for functionality 
+                    which resolved 95% of critical issues.</p>
+                    <p>• Conducted API testing using Postman and Rest Assured ensuring 99.9% API reliability.</p>
+                <!-- <a href="https://app.captivr.net/" target="_blank">View the Application</a> -->
             </div>
-            <!-- <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out">
-                <img src="https://picsum.photos/1600/900" alt="Project Image" class="project-thumbnail">
-                <h3>Project Title 2</h3>
-                <p>Description of the project. Include the problem you solved, the technologies used, and any notable achievements.</p>
-                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
-            </div> -->
+            <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out">
+                <img src="https://i.imgur.com/cKZWpWt.png" alt="Project Image" class="project-thumbnail">
+                <h3>AmaliBlog</h3>
+                <p>AmaliBlog is a web-based platform that enables AmaliTech employees to exchange knowledge by writing and publishing articles.</p>
+                <p>• Developed and executed detailed test cases based on Software Requirement Specifications (SRS) for manual testing, increasing test coverage by 89%.</p>
+                <p>• Assisted in automating regression tests using Selenium, reducing testing time by 50%.</p>
+                <!-- <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a> -->
+            </div>
         </section>
 
         <section id="experience" data-aos="fade-up" data-aos-duration="1500">
             <h2>Work Experience</h2>
             <div class="job" data-aos="fade-right" data-aos-duration="1000">
-                <h4>Software Test Engineer - AmaliTech gGmbH, Ghana, West-Africa  2023- Present</h4>
-                <p>- Demonstrated strong leadership in testing, mentoring junior testers,
-                    leading test strategy meetings, coordinating testing efforts across
-                    multiple teams, and implementing best practices in test automation
-                    and quality assurance; improved team productivity by 25% and
-                    enhanced overall testing quality and efficiency</p>
-                <p>- Developed a comprehensive test plan and detailed test cases,
-                    performing thorough manual testing for functionality, reliability, and
-                    usability. Resolved 95% of critical issues pre-release. Conducted API
-                    tests using Postman, Rest Assured, Karate DSL, and Wire Mock,
-                    ensuring 99.9% API reliability.</p>
-                <p>- Developed and maintained automated testing frameworks with
-                    Selenium, Selenide, Cucumber, and Cypress, cutting regression
-                    testing time by 40% and boosting release efficiency by 25%.
-                    Performed mobile app testing with Appium, reducing crash rates by
-                    30%. Conducted performance and load testing with Gatling and
-                    JMeter, improving performance by 35% and speeding up applications
-                    by 20% through detailed reporting</p>
+                <h4>Software Test Engineer - <a href="https://amalitech.org/" id="companySite">AmaliTech gGmbH</a>, Ghana, West-Africa  2023- Present</h4>
+                <p>• Exhibited strong leadership in test management by mentoring junior testers, spearheading test strategy discussions, 
+                    and effectively coordinating testing efforts across various teams. 
+                    This resulted in a 25% boost in team productivity and significant improvements in overall testing quality and efficiency.</p>
+                <p>• Developed and executed a comprehensive test plan and detailed test cases based on Software Requirements Specification (SRS), 
+                    performing thorough manual testing for functionality which resolved 95% of critical issues pre-release.</p>
+                <p>• Conducted API testing using Postman, Rest Assured, Karate DSL, and WireMock, ensuring 99.9% API reliability.</p>
+                <p>• Developed and optimized automated testing frameworks, reducing regression testing time by 40% and enhancing release efficiency by 25% using Selenium, Selenide, and Cypress.</p>
+                <p>• Improved mobile app stability by 50% using Appium.</p>
+                <p>• Enhanced overall System performance by 30% and load-handling capacity by 35% using Gatling and JMeter.</p>
             </div>
             <div class="job" data-aos="fade-left" data-aos-duration="1000">
-                <h4>Intern - AmaliTech gGmbH, Ghana, West-Africa 2022-2023</h4>
-                <p>Develop detailed test cases and conduct manual testing which
-                    improved productivity by 15%.</p>
+                <h4>Intern - <a href="https://amalitech.org/" id="companySite">AmaliTech gGmbH</a>, Ghana, West-Africa 2022-2023</h4>
+                <p>• Developed and executed detailed test cases based on Software Requirement Specifications (SRS) for manual testing, increasing test coverage by 7%.</p>
+                <p>• Assisted in automating regression tests using Selenium, reducing testing time by 30% and 
+                    enhancing overall system stability.</p>
             </div>
         </section>
 
         <section id="education" data-aos="fade-down" data-aos-duration="1500">
             <h2>Education</h2>
-            <p>Takoradi Technical University, Ghana, West-Africa</p>
-            <p>Specialization: Bachelor of Technology In Information Communication Technology - Software Engineering</p>
+            <p>Takoradi Technical University, Ghana West-Africa - Bachelor of Technology</p>
+            <p>Specialization: Information and Communication Technology - Software Engineering</p>
+            <br>
+            <p>Takoradi Technical University, Ghana West-Africa - Higher National Diploma</p>
+            <p>Specialization: Information and Communication Technology</p>
+            <br>
+            <p>Takoradi Technical University, Ghana West-Africa - Diploma</p>
+            <p>Specialization: Information and Communication Technology</p> 
         </section>
       
         <section id="testimonials" data-aos="fade-up" data-aos-duration="1200">
@@ -167,13 +202,13 @@
             <div class="testimonials-container">
                 <div class="testimonial-card">
                     <div class="testimonial-image-container">
-                        <img src="C:\Users\HusseinAmadu\Desktop\Hussein Amadu Portfolio\util\richard.jpeg" alt="Jane Doe" class="testimonial-image">
+                        <img src="https://i.imgur.com/is2O7tu.jpg" alt="Jane Doe" class="testimonial-image">
                     </div>
                     <div class="testimonial-content">
                         <p>"Your work ethic and skills were top-notch. A true professional in every sense."</p>
                         <h4>Richard Appiah</h4>
                         <p>Senior Developer at AmaliTech gGmbH</p>
-                        <a href="sd" target="_blank">View profile</a>
+                        <a href="https://www.linkedin.com/in/richard-ap/" target="_blank">View profile</a>
                     </div>
                 </div>
                 <div class="testimonial-card">
@@ -204,14 +239,14 @@
 <section id="download-cv" data-aos="fade-up" data-aos-duration="1200">
             <h2>Download My CV</h2>
             <p>If you're interested in learning more about my professional background, feel free to download my CV.</p>
-            <a href="https://drive.google.com/file/d/1vb0ay2FSjX0fU93g2cKWNomyEqKO6INk/view?usp=sharing" download="Hussein_Amadu_CV" class="download-btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/1wtwn6Bxs39LkQ31bT-SiAIQcfBv3_k8b/view?usp=sharing" download="Hussein_Amadu_CV" class="download-btn">Download CV</a>
         </section>
 
 <section id="contact" data-aos="zoom-in" data-aos-duration="1500">
     <h2>Contact</h2>
     <p>Email: <a href="https://husseinamadu634@gmail.com">husseinamadu634@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/hussein-amadu-703426258" target="_blank">Your LinkedIn</a></p>
-    <p>Address: Accra, Ghana, West-Africa</p> <!-- Add your address if desired -->
+    <p>Address: Takoradi, Ghana, West-Africa</p> <!-- Add your address if desired -->
 </section>
 
     </main>
