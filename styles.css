@@ -129,6 +129,9 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
 }
+#projectBreakDown{
+    text-align: left;
+}
 
 .project-thumbnail {
     width: 100%;
