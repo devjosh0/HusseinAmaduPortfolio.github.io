@@ -19,3 +19,30 @@ function validateForm() {
     // Add your form validation logic here
     return true; // Return true if the form is valid, false otherwise
 }
+
+
+
+const certificateContainer = document.querySelector('.certificates-container');
+const certificatesSection = document.getElementById('certificates');
+
+// Get the width of the #certificates section
+const containerWidth = certificatesSection.offsetWidth;
+
+function moveCertificates() {
+    let position = containerWidth;
+    const contentWidth = certificateContainer.scrollWidth;
+
+    function move() {
+        if (position + contentWidth > 0) {
+            position -= 2; // Adjust speed here
+            certificateContainer.style.transform = `translateX(${position}px)`;
+        } else {
+            position = containerWidth; // Reset position when it reaches the end
+        }
+        requestAnimationFrame(move);
+    }
+
+    move();
+}
+
+moveCertificates();

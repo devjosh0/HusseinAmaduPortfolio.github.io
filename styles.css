@@ -39,7 +39,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text visibility */
+   background-color: rgba(0, 0, 0, 0.3);  
 }
 
 h1 {
@@ -162,6 +162,65 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+
+/* Certificates Section */
+#certificates {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    position: relative;
+    width: 100%; /* Ensure the container takes up full width */
+    overflow: hidden; /* Hide overflow content */
+    min-height: 300px; /* Set a minimum height to accommodate certificates */
+}
+
+
+.certificates-container {
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.certificates-container .certificate {
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.certificates-container img {
+    width: 150px;
+    height: 150px; /* Set the height to be equal to the width */
+    object-fit: contain; /* Ensures the entire image, including text, is visible without zooming */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Keyframe Animation for Scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.certificates-container {
+    animation: scroll 20s linear infinite;
+}
+
+
+
+
+
+
+
+
 
 .skills-container {
     display: flex;
